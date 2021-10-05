@@ -1,6 +1,8 @@
-/*
- your comment header here
- */
+/*********************
+Name: Darren Bowers
+Coding 04
+Purpose: Program to dynamically create two parallel integer arrays and perform operations on them.
+**********************/
 
 #include "main.h"
 
