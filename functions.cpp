@@ -14,8 +14,10 @@ float avg_array(int*, const int){
     return 0;
 }
 
-void add_arrays(int*, int*, int*, const int){
-    
+void add_arrays(int *arr1, int *arr2, int *arr3, const int arraySize){
+    for(int i=0; i< arraySize; i++){
+        arr1[i] = (arr2[i] + arr3[i]);
+    }
 }
 
 void display_array(int *arr, const int arraySize){
