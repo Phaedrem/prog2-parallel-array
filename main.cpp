@@ -29,8 +29,7 @@ int main(int argc, char** argv) {
             add_arrays(answers,numbers1,numbers2,arraySize);
             display_array(answers, arraySize);
             cout << endl << "adding the arrays together:" << endl;
-            cout << "array 1 sum: " << sum_array(numbers1, arraySize);
-
+            cout << "array 1 sum: " << sum_array(numbers1, arraySize) << endl;
             
 
             delete[] numbers1;
