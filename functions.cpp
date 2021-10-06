@@ -19,8 +19,15 @@ void add_arrays(int*, int*, int*, const int){
 }
 
 void display_array(int *arr, const int arraySize){
-    for(int i=0; i< arraySize; i++)
-        cout << arr[i] << " ";
+    cout << "[";
+    for(int i=0; i< arraySize; i++){
+        cout << arr[i];
+        if(i<arraySize-1){
+            cout << " ";
+        } else{
+            cout << "]" << endl;
+        }
+    }
 }
 
 void fill_random(int *arr, const int arraySize){

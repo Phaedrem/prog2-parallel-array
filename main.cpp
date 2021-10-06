@@ -21,7 +21,9 @@ int main(int argc, char** argv) {
             numbers2 = new int[arraySize];
             answers = new int[arraySize];
             fill_random(numbers1, arraySize);
+            fill_random(numbers2, arraySize);
             display_array(numbers1, arraySize);
+            display_array(numbers2, arraySize);
             
 
             delete[] numbers1;
