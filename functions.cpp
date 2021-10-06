@@ -18,12 +18,15 @@ void add_arrays(int*, int*, int*, const int){
     
 }
 
-void display_array(int*, const int){
-
+void display_array(int *arr, const int arraySize){
+    for(int i=0; i< arraySize; i++)
+        cout << arr[i] << " ";
 }
 
-void fill_random(int*, const int){
-
+void fill_random(int *arr, const int arraySize){
+    for(int i=0; i<arraySize; i++){
+        arr[i] = rand()%MAX+MIN;
+    }
 }
 
 bool is_positive_integer(char*){

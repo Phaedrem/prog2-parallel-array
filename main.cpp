@@ -20,6 +20,9 @@ int main(int argc, char** argv) {
             numbers1 = new int[arraySize];
             numbers2 = new int[arraySize];
             answers = new int[arraySize];
+            fill_random(numbers1, arraySize);
+            display_array(numbers1, arraySize);
+            
 
             delete[] numbers1;
             delete[] numbers2;
@@ -33,12 +36,6 @@ int main(int argc, char** argv) {
     }
 
      /* DELETE ALL THESE COMMENTS WHEN YOU ARE DONE.
-
-    /* STEP 2: after you are sure you have a good string that represents a
-     * positive int above 0, use it to dynamically create 3 int
-     * arrays of that size. Call the arrays, 'numbers1', 'numbers2',
-     * and 'answer'.
-     */
 
     /* STEP 3: call your fill_random() function to fill the arrays with
      * random numbers 1 - 100
