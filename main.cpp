@@ -25,10 +25,12 @@ int main(int argc, char** argv) {
             fill_random(numbers2, arraySize);
             display_array(numbers1, arraySize);
             display_array(numbers2, arraySize);
-            cout << endl; 
+            cout << endl << "adding the arrays together:" << endl;
             add_arrays(answers,numbers1,numbers2,arraySize);
-            cout << "adding the arrays together:" << endl;
             display_array(answers, arraySize);
+            cout << endl << "adding the arrays together:" << endl;
+            cout << "array 1 sum: " << sum_array(numbers1, arraySize);
+
             
 
             delete[] numbers1;
