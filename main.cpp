@@ -25,6 +25,10 @@ int main(int argc, char** argv) {
             fill_random(numbers2, arraySize);
             display_array(numbers1, arraySize);
             display_array(numbers2, arraySize);
+            cout << endl; 
+            add_arrays(answers,numbers1,numbers2,arraySize);
+            cout << "adding the arrays together:" << endl;
+            display_array(answers, arraySize);
             
 
             delete[] numbers1;
@@ -39,14 +43,6 @@ int main(int argc, char** argv) {
     }
 
      /* DELETE ALL THESE COMMENTS WHEN YOU ARE DONE.
-
-    /* STEP 3: call your fill_random() function to fill the arrays with
-     * random numbers 1 - 100
-     */
-
-    /* STEP 4: print out both arrays as shown in the examples using your
-     * display_array() function
-     */
 
     /* STEP 5: add the arrays together and store the answer in the 
      * answer array using your add_arrays() function
