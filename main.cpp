@@ -9,24 +9,20 @@ Purpose: Program to dynamically create two parallel integer arrays and perform o
 int main(int argc, char** argv) {
     srand(time(NULL));  // do this only once per application
     fstream myfile;
+    int arraySize;
 
     if(argc == 2){
+        arraySize = atoi(argv[1]);
+        if(arraySize > 0){
+            cout << "it worked!" << endl;
+        } else{
+            cout << "usage: " << argv[0] << " n (where n is a number above 0)" << endl;
+        }
     } else {
         cout << "usage: " << argv[0] << " n (where n is a number above 0)" << endl;
     }
-    /* write your code below to create the program as
-     * specified in the assignment and as shown in the examples.
-     * follow the instructions given here and in the assignment.
-     * DELETE ALL THESE COMMENTS WHEN YOU ARE DONE.
-     */
 
-    /* STEP 1: check your arguments, make sure you have exactly 2 using
-     * argc, and make sure the second argument is a string with only
-     * digit characters that represents a positive (above 0) number.
-     * use your function is_positive_integer() to do this. display
-     * an error message as shown in the examples if the parameters
-     * are not correct.
-     */
+     /* DELETE ALL THESE COMMENTS WHEN YOU ARE DONE.
 
     /* STEP 2: after you are sure you have a good string that represents a
      * positive int above 0, use it to dynamically create 3 int
