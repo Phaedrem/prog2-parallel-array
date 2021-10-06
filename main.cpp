@@ -14,7 +14,17 @@ int main(int argc, char** argv) {
     if(argc == 2){
         arraySize = atoi(argv[1]);
         if(arraySize > 0){
-            cout << "it worked!" << endl;
+            int *numbers1;
+            int *numbers2;
+            int *answers;
+            numbers1 = new int[arraySize];
+            numbers2 = new int[arraySize];
+            answers = new int[arraySize];
+
+            delete[] numbers1;
+            delete[] numbers2;
+            delete[] answers;
+
         } else{
             cout << "usage: " << argv[0] << " n (where n is a number above 0)" << endl;
         }
