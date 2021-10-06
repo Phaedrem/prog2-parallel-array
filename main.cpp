@@ -7,11 +7,13 @@ Purpose: Program to dynamically create two parallel integer arrays and perform o
 #include "main.h"
 
 int main(int argc, char** argv) {
-    /* uncomment this next line when you put the libraries in the header
-     * file that will give you access to these functions and then
-     * delete this comment.*/
-    //srand(time(NULL));  // do this only once per application
+    srand(time(NULL));  // do this only once per application
+    fstream myfile;
 
+    if(argc == 2){
+    } else {
+        cout << "usage: " << argv[0] << " n (where n is a number above 0)" << endl;
+    }
     /* write your code below to create the program as
      * specified in the assignment and as shown in the examples.
      * follow the instructions given here and in the assignment.
