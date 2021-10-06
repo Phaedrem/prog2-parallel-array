@@ -45,23 +45,6 @@ int main(int argc, char** argv) {
         cout << "usage: " << argv[0] << " n (where n is a number above 0)" << endl;
     }
 
-     /* DELETE ALL THESE COMMENTS WHEN YOU ARE DONE.
-
-    /* STEP 5: add the arrays together and store the answer in the 
-     * answer array using your add_arrays() function
-     */
-
-    /* STEP 6: print out the answer array as shown in the examples using your
-     * display_array() function
-     */
-
-    /* STEP 7: use your sum_array() and avg_array() functions to print out
-     * the remaining items as shown in the examples.
-     */
-
-    /* STEP 8: delete all three arrays
-     */
-
     return 0;
 }
 
