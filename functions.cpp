@@ -6,8 +6,12 @@ Purpose: Program to dynamically create two parallel integer arrays and perform o
 
 #include "functions.h"
 
-int sum_array(int*, const int){
-    return 0;
+int sum_array(int *arr, const int arraySize){
+    int sum = 0;
+    for(int i=0; i< arraySize; i++){
+        sum += arr[i];
+    }
+    return sum;
 }
 
 float avg_array(int*, const int){
