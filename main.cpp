@@ -20,6 +20,7 @@ int main(int argc, char** argv) {
             numbers1 = new int[arraySize];
             numbers2 = new int[arraySize];
             answers = new int[arraySize];
+            cout << "the two arrays created are:" << endl;
             fill_random(numbers1, arraySize);
             fill_random(numbers2, arraySize);
             display_array(numbers1, arraySize);
