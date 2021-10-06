@@ -14,8 +14,9 @@ int sum_array(int *arr, const int arraySize){
     return sum;
 }
 
-float avg_array(int*, const int){
-    return 0;
+float avg_array(int *arr, const int arraySize){
+    float average = float(sum_array(arr, arraySize)) / float(arraySize);
+    return average;
 }
 
 void add_arrays(int *arr1, int *arr2, int *arr3, const int arraySize){

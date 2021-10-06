@@ -30,7 +30,9 @@ int main(int argc, char** argv) {
             display_array(answers, arraySize);
             cout << endl << "adding the arrays together:" << endl;
             cout << "array 1 sum: " << sum_array(numbers1, arraySize) << endl;
-            
+            cout << "array 1 average: " << avg_array(numbers1, arraySize) << endl;
+            cout << endl <<"array 2 sum: " << sum_array(numbers2, arraySize) << endl;
+            cout << "array 2 average: " << avg_array(numbers2, arraySize) << endl;
 
             delete[] numbers1;
             delete[] numbers2;
