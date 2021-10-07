@@ -14,12 +14,9 @@ int main(int argc, char** argv) {
     if(argc == 2){
         if(is_positive_integer(argv[1])){
             arraySize = atoi(argv[1]);
-            int *numbers1;
-            int *numbers2;
-            int *answers;
-            numbers1 = new int[arraySize];
-            numbers2 = new int[arraySize];
-            answers = new int[arraySize];
+            int *numbers1 = new int[arraySize];
+            int *numbers2 = new int[arraySize];
+            int *answers= new int[arraySize];
             cout << "the two arrays created are:" << endl;
             fill_random(numbers1, arraySize);
             fill_random(numbers2, arraySize);
