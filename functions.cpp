@@ -46,7 +46,7 @@ void fill_random(int *arr, const int arraySize){
 bool is_positive_integer(char *argv){
     bool success = true;
     for(int i=0; argv[i] != '\0'; i++){
-        if(argv[i] <= '0' || argv[i] > '9'){
+        if(argv[0] == '0' || argv[i] < '0' || argv[i] > '9'){
             success = false;
         }
     }
