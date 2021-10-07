@@ -43,12 +43,12 @@ void fill_random(int *arr, const int arraySize){
     }
 }
 
-bool is_positive_integer(char*){
-    return 0;
+bool is_positive_integer(char *argv){
+    bool success = true;
+    for(int i=0; argv[i] != '\0'; i++){
+        if(argv[i] <= '0' || argv[i] > '9'){
+            success = false;
+        }
+    }
+    return success; 
 }
-
-    /*
-     * write your function definitions here to create the program as
-     * specified in the assignment and shown in the examples
-     */
-

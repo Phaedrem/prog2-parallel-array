@@ -12,8 +12,8 @@ int main(int argc, char** argv) {
     int arraySize;
 
     if(argc == 2){
-        arraySize = atoi(argv[1]);
-        if(arraySize > 0){
+        if(is_positive_integer(argv[1])){
+            arraySize = atoi(argv[1]);
             int *numbers1;
             int *numbers2;
             int *answers;
