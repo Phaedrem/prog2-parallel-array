@@ -46,9 +46,11 @@ void fill_random(int *arr, const int arraySize){
 bool is_positive_integer(char *argv){
     bool success = true;
     int length = strlen(argv);
-    for(int i=0; argv[i] != '\0'; i++){
-        if((length == 1 && argv[0] == '0') || argv[i] < '0' || argv[i] > '9'){
+    for(int i=0; i<length; i++){
+        if(argv[i] < '0' || argv[i] > '9'){
             success = false;
+        } else if(int test = atoi(argv) == 0){
+                success = false;
         }
     }
     return success; 
